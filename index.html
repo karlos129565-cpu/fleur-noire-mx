@@ -13,20 +13,23 @@
     min-height: 100vh;
   }
 .hero {
-  display: flex-direction: column;
-  align-items: center;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
   justify-content: center;
   min-heigth: 100vh;
   padding: 20px;
   text-align: center;
+    gap: 15px;
+
 }
   
   .hero img { 
-    height: 500px; 
-    width: auto; 
-    max-width: 90%;
+    height: auto; 
+    max-height: 50vh; 
+    max-width: 400px;
     display: block; 
-    margin: 0 
+    margin: 0;
     object-fit: contain;
 }
 .hero h2 { 
@@ -66,6 +69,8 @@
   <div class="hero">
     <img src="favicon.jpeg" alt="Fleur Noire Logo">
  <h2> La Elegancia Nace en las Sombras</h2>
+    <a href="#productos" class="btn-descubrir">DESCUBRIR MAS</a>
+  </section>
   </div>
 </body>
 </html>
