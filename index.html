@@ -13,54 +13,59 @@
     min-height: 100vh;
   }
 .hero {
-  display: flex; 
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center;
-  min-heigth: 100vh;
-  padding: 20px;
-  text-align: center;
-    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    gap: 20px; /
+}
 
-}
-  
-  .hero img { 
-    height: auto; 
-    max-height: 50vh; 
-    max-width: 400px;
-    display: block; 
+.hero img { 
+    width: auto; 
+    height: auto;
+    max-width: 350px; 
+    max-height: 45vh;
+    display: block;
     margin: 0;
-    object-fit: contain;
 }
+
 .hero h2 { 
-    font-size: 2.2rem; 
+    font-size: 2rem; 
     font-weight: 400;
-    margin: 10px 0 0 0; 
-    color: #fff4d00;
+    margin: 0; 
+    color: #ff4d00;
     letter-spacing: 4px;
     text-transform: uppercase;
-    animation: fireGlow 2s ease-in-out infinite alternate;
-  text-shadow:
-        0 0 10px #ff4d00,
-        0 0 20px #ff4d00,
-        0 0 30px #ff4500;
-  }
-   @keyframes fireGlow {
-    0% {
-      text-shadow:
-        0 0 10px #ff4d00,
-        0 0 20px #ff4d00,
-        0 0 30px #ff4500,
-        0 0 40px #ff000;
+    animation: fireGlow 1.5s ease-in-out infinite alternate;
+    text-shadow: 0 0 10px #ff4d00, 0 0 20px #ff4d00, 0 0 30px #ff4500;
 }
-     to {
-       text-shadow: 
-          0 0 20px #ff8c00,
-          0 0 30px #ff8c00,
-          0 0 40px #ff6600,
-          0 0 50px #ff4500,
-          0 0 60px #ff0000;
-    }
+
+
+.btn-descubrir {
+    display: inline-block;
+    padding: 14px 35px;
+    background: transparent;
+    color: #ff4d00;
+    border: 2px solid #ff4d00;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 77, 0, 0.4);
+}
+
+.btn-descubrir:hover {
+    background: #ff4d00;
+    color: #000;
+    box-shadow: 0 0 25px #ff4d00, 0 0 50px #ff4500;
+    transform: translateY(-3px);
 }
          
     </style>
