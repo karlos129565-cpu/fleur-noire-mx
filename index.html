@@ -18,6 +18,7 @@
   justify-content: center;
   min-heigth: 100vh;
   padding: 20px;
+  text-align: center;
 }
   
   .hero img { 
@@ -29,27 +30,31 @@
 .hero h2 { 
     font-size: 2.2rem; 
     font-weight: 400;
-    margin-top: -0px 0 0 0; 
-    color: #4db8ff;
+    margin: 10px 0 0 0; 
+    color: #fff4d00;
     letter-spacing: 4px;
     text-transform: uppercase;
     animation: fireGlow 2s ease-in-out infinite alternate;
+  text-shadow:
+        0 0 10px #ff4d00,
+        0 0 20px #ff4d00,
+        0 0 30px #ff4500;
   }
    @keyframes fireGlow {
     0% {
       text-shadow:
-        0 0 10px #fff,
-        0 0 20px #fff,
-        0 0 30px #4db8ff,
-        0 0 40px #4db8ff;
+        0 0 10px #ff4d00,
+        0 0 20px #ff4d00,
+        0 0 30px #ff4500,
+        0 0 40px #ff000;
 }
-     100% {
+     to {
        text-shadow: 
-          0 0 20px #fff,
-          0 0 30px #b3e0ff,
-          0 0 40px #b3e0ff,
-          0 0 80px #4db8ff,
-          0 0 100px #4db8ff;
+          0 0 20px #ff8c00,
+          0 0 30px #ff8c00,
+          0 0 40px #ff6600,
+          0 0 50px #ff4500,
+          0 0 60px #ff0000;
     }
 }
          
