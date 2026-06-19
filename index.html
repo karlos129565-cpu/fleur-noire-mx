@@ -35,18 +35,16 @@
 .hero h2 { 
     font-size: 2rem; 
     font-weight: 700;
-    margin: 0; 
-    color: #ffffff;
+    margin: 0;
+    color: #ffffff !important; 
     letter-spacing: 4px;
     text-transform: uppercase;
-    animation: witheFire 1.2s ease-in-out infinite alternate;
+    animation: whiteFire 0.8s ease-in-out infinite !important;
     text-shadow: 
         0 0 10px #fff,
         0 0 20px #fff,
-        0 0 30px #e0e0e0,
-        0 0 50px #c0c0c0;
+        0 0 30px #e0e0e0;
 }
-
 .btn-descubrir {
     display: inline-block;
     padding: 14px 35px;
@@ -106,9 +104,9 @@
             0 0 10px #fff,
             0 0 20px #fff,
             0 0 40px #e0e0e0;
-        transform: scaleY(1) skewX(0deg);
+        transform: translateY(0px);
     }
-    20% {
+    50% {
         text-shadow: 
             0 -5px 15px #fff,
             0 -10px 25px #fff,
@@ -122,19 +120,21 @@
             0 0 50px #ffffff;
         transform: scaleY(0.97) skewX(-1deg);
     }
-    60% {
+    50% {
         text-shadow: 
-            0 -8px 20px #fff,
-            0 -15px 40px #fff,
-            0 -20px 60px #e0e0e0;
-        transform: scaleY(1.04) skewX(0.5deg);
+            0 0 5px  15px #fff,
+            0 0 10px 25px #fff,
+            0 0 20px 40px #fff,
+            0 0 40px 60px #e0e0e0;             
+        transform: translateY(0px); 
     }
-    80% {
+    50% {
         text-shadow: 
-            0 0 15px #fff,
-            0 0 25px #fff,
-            0 0 45px #ffffff;
-        transform: scaleY(1) skewX(-0.5deg);
+            0 -5px 15px #fff,
+            0  -10px 25px #fff,
+            0  -15px 40px #fff;
+            0  -20px 60px #e0e0e0;
+        transform: translateY(-3px);
     }
 }
     
