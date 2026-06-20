@@ -1,66 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UFT-8">
-<meta name="viewport" content="width=device=width, initial-scale=1.0>
-<title>Fleur Noire MX - Marcas</tittle>
-<style>
-  body {
-     margin: 0;
-     background: radial-gradient(circle at center, #0a0a0a 0%, #000000 100%);
-color: #FFF;
-font-family: Georgina, serif;
-min-height: 100vh;
-text-align: center;
-padding: 40px 20px;
-}
-
-h1 {
-font-size: 2.5rem;
-text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
-margin-bottom: 50px;
-}
-
-.marcas-grid {
-display: grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-gap: 30px;
-max-width: 900px;
-margin: 0 auto;
-align-items: center; 
-}
-
-.marca-logo {
-max-width: 120px;
-width: 100%;
-height: auto;
-filter: brightness(0) invert(1);
-opacity: 0.8;
-transition: all 0.3s sase;
-}
-
-.marca-logo:hover {
-opacity: 1;
-transform: scale(1.1);
-filter: brightness(0) invert(1) drop-shadow(0 0 10px #00ffff);
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleur Noire MX - Marcas</title>
+    <style>
+        body {
+            margin: 0;
+            background: radial-gradient(circle at center, #0a0a0a 0%, #000000 100%);
+            color: #FFF;
+            font-family: Georgia, serif;
+            min-height: 100vh;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+            margin-bottom: 50px;
         }
 
-.volver {
-display: inline-block;
-margin-top: 60px;
-padding: 12px 30px;
-background: #fff;
-color: #000;
-text-decoration: none;
-border-radius: 50px;
-front-weight: bold;
-box-shadow: 0 0 20px rgba(255, 255, 0.3);
-}
-</style>
+        .marcas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .marca-logo {
+            max-width: 120px;
+            width: 100%;
+            height: auto;
+            filter: brightness(0) invert(1); /* Pone logos blancos */
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+
+        .marca-logo:hover {
+            opacity: 1;
+            transform: scale(1.1);
+            filter: brightness(0) invert(1) drop-shadow(0 0 10px #00ffff);
+        }
+
+        .volver {
+            display: inline-block;
+            margin-top: 60px;
+            padding: 12px 30px;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+    </style>
 </head>
 <body>
-<h1>Nuestras Marcas</h1>
+    <h1>NUESTRAS MARCAS</h1>
+    
+    <div class="marcas-grid">
+ <img src="logo-adidas.webp" alt="Adidas" class="marca-logo">
 
-<div class="marcas-grid">
+ <img src="logo-azzaro.webp" alt="Azzaro" class="marca-logo">
 
+ <img src="logo-calvin" alt="Calvin Klein" class="marca-logo">
 
+ <img src="logo-ch" alt="Carolina Herrera" class="marca-logo">   
 
+      
