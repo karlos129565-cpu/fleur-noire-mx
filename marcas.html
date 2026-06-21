@@ -34,15 +34,25 @@
             max-width: 120px;
             width: 100%;
             height: auto;
-            filter: brightness(1) invert(0); 
-            opacity: 0.8;
+            background: #0a0a0a; 
+            padding: 12px;
+            bording-radius: 10px;
+            opacity: 0.7;
             transition: all 0.3s ease;
+            border: 1px solid #1a1a1a;
+            
         }
 
         .marca-logo:hover {
             opacity: 1;
-            transform: scale(1.1);
-            filter: brightness(0) invert(1) drop-shadow(0 0 10px #00ffff);
+            transform: scale(1.15) translateY(-8px);
+            border: 1px solid #00ffff;
+            box-shadow:
+                0 0 15px #00ffff,
+                0 0 30px #00ffff,
+                0 0 60px #00ffff, 
+                0 8px 25px rgba(0, 255, 255, 0.3);
+                
         }
 
         .volver {
