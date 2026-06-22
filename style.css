@@ -128,5 +128,30 @@ body {
     .historia-card {
         flex-direction: column;
         text-align: center;
+
+        .boton-historia-container {
+    text-align: center;
+    margin: 10px 0 50px 0;
+}
+
+.btn-historia {
+    background: #000;
+    border: 2px solid #00ffff;
+    color: #00ffff;
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-historia:hover {
+    background: #00ffff;
+    color: #000;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+    transform: translateY(-3px);
+}
     }
 }
