@@ -5,6 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fleur Noire MX - Marcas</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* FLAMEO PARA TODOS LOS LOGOS */
+        .marca-logo {
+            animation: flameo-marcas 1.8s ease-in-out infinite alternate !important;
+            border-radius: 8px !important;
+            transition: all 0.3s ease !important;
+        }
+
+        @keyframes flameo-marcas {
+            0% { 
+                box-shadow: 0 0 15px #00f2ff,
+                            0 0 30px #00f2ff,
+                            0 0 45px #0099ff !important;
+                transform: scale(1);
+            }
+            100% { 
+                box-shadow: 0 0 35px #00f2ff,
+                            0 0 70px #00f2ff,
+                            0 0 105px #0099ff,
+                            0 0 140px #0066ff !important;
+                transform: scale(1.03);
+            }
+        }
+
+        /* HOVER BRUTAL */
+        .marca-logo:hover {
+            animation: flameo-hover 0.6s ease-in-out infinite alternate !important;
+            transform: scale(1.1) !important;
+            z-index: 10 !important;
+            cursor: pointer !important;
+        }
+
+        @keyframes flameo-hover {
+            0% { 
+                box-shadow: 0 0 50px #00f2ff,
+                            0 0 100px #00f2ff,
+                            0 0 150px #0099ff !important;
+            }
+            100% { 
+                box-shadow: 0 0 80px #00f2ff,
+                            0 0 160px #00f2ff,
+                            0 0 240px #0099ff !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
