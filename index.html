@@ -31,6 +31,7 @@ body {
     padding: 20px !important;
 }
 
+/* DESKTOP - GRANDE */
 .logo-glow {
     max-width: 85vw !important;
     width: auto !important;
@@ -44,14 +45,12 @@ body {
     0% { 
         filter: drop-shadow(0 0 40px #00f2ff) 
                 drop-shadow(0 0 80px #00f2ff)
-                drop-shadow(0 0 120px #0099ff)
-                drop-shadow(0 0 160px #0066ff);
+                drop-shadow(0 0 120px #0099ff);
     }
     100% { 
         filter: drop-shadow(0 0 70px #00f2ff) 
                 drop-shadow(0 0 140px #00f2ff)
-                drop-shadow(0 0 210px #0099ff)
-                drop-shadow(0 0 280px #0066ff);
+                drop-shadow(0 0 210px #0099ff);
     }
 }
 
@@ -80,6 +79,7 @@ body {
     cursor: pointer !important;
     transition: all 0.3s ease !important;
     box-shadow: 0 0 90px rgba(255, 255, 255, 0.6) !important;
+    margin-bottom: 40px !important;
 }
 
 .btn-descubrir:hover {
@@ -115,6 +115,55 @@ body {
     height: 85px !important;
 }
 
+.whatsapp-text {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .logo-glow {
+        max-width: 95vw !important;
+        max-height: 45vh !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .hero-section h2 {
+        font-size: 2.2rem !important;
+        margin-bottom: 25px !important;
+        letter-spacing: 2px !important;
+    }
+    
+    .btn-descubrir {
+        padding: 18px 40px !important;
+        font-size: 1.3rem !important;
+        border: 3px solid #FFF !important;
+        letter-spacing: 4px !important;
+        margin-bottom: 80px !important;
+    }
+    
+    .whatsapp-float {
+        width: 70px !important;
+        height: 70px !important;
+        bottom: 25px !important;
+        right: 25px !important;
+    }
+    
+    .whatsapp-float img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .btn-descubrir {
+        padding: 15px 30px !important;
+        font-size: 1.1rem !important;
+        letter-spacing: 3px !important;
+    }
+}
 .whatsapp-text {
     display: none !important;
 }
