@@ -5,7 +5,7 @@
   <meta charset="UFT-8">
   <link rel="icon" type="image/jpeg" href="favicon.jpeg">
   <style>
-  * {
+ * {
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
@@ -17,8 +17,7 @@ body {
     padding: 0 !important;
     width: 100vw !important;
     height: 100vh !important;
-    overflow-x: hidden !important;
-    font-family: 'Georgia', serif !important;
+    overflow: hidden !important;
 }
 
 .hero-section {
@@ -29,98 +28,89 @@ body {
     justify-content: center !important;
     align-items: center !important;
     text-align: center !important;
-    padding: 20px !important;
+    padding: 30px !important;
 }
 
 .logo-glow {
-    max-width: 95vw !important;
-    width: 95vw !important;
-    max-height: 70vh !important;
+    max-width: 70vw !important;
+    width: auto !important;
+    max-height: 55vh !important;
     height: auto !important;
-    margin: 0 auto 40px auto !important;
-    animation: flameo-brutal 1s ease-in-out infinite alternate;
+    margin: 0 auto 30px auto !important;
+    animation: flameo-pro 1.2s ease-in-out infinite alternate;
 }
 
-@keyframes flameo-brutal {
+@keyframes flameo-pro {
     0% { 
-        filter: drop-shadow(0 0 30px #00f2ff) 
-                drop-shadow(0 0 60px #00f2ff)
-                drop-shadow(0 0 90px #0099ff)
-                drop-shadow(0 0 120px #0066ff);
+        filter: drop-shadow(0 0 25px #00f2ff) 
+                drop-shadow(0 0 50px #00f2ff)
+                drop-shadow(0 0 75px #0099ff);
     }
     100% { 
-        filter: drop-shadow(0 0 60px #00f2ff) 
-                drop-shadow(0 0 120px #00f2ff)
-                drop-shadow(0 0 180px #0099ff)
-                drop-shadow(0 0 240px #0066ff);
+        filter: drop-shadow(0 0 45px #00f2ff) 
+                drop-shadow(0 0 90px #00f2ff)
+                drop-shadow(0 0 135px #0099ff);
     }
 }
 
 .hero-section h2 {
     color: #FFF !important;
-    font-size: 3.5rem !important;
-    margin-bottom: 50px !important;
-    text-shadow: 0 0 15px rgba(255,255,255,0.5) !important;
-    letter-spacing: 4px !important;
+    font-size: 4rem !important;
+    margin-bottom: 40px !important;
+    text-shadow: 0 0 20px rgba(255,255,255,0.6) !important;
+    letter-spacing: 5px !important;
     font-weight: 200 !important;
     font-family: 'Georgia', serif !important;
 }
 
 .btn-descubrir {
     display: inline-block !important;
-    padding: 35px 120px !important;
+    padding: 40px 140px !important;
     background: transparent !important;
     color: #FFF !important;
-    border: 5px solid #FFF !important;
-    border-radius: 70px !important;
-    font-size: 2.2rem !important;
+    border: 6px solid #FFF !important;
+    border-radius: 80px !important;
+    font-size: 2.8rem !important;
     font-weight: 300 !important;
-    letter-spacing: 8px !important;
+    letter-spacing: 10px !important;
     text-transform: uppercase !important;
     text-decoration: none !important;
     cursor: pointer !important;
-    transition: all 0.4s ease !important;
-    box-shadow: 0 0 60px rgba(255, 255, 255, 0.4) !important;
-    font-family: 'Arial', sans-serif !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 0 70px rgba(255, 255, 255, 0.5) !important;
 }
 
 .btn-descubrir:hover {
     background: #FFF !important;
     color: #000 !important;
-    box-shadow: 0 0 100px rgba(255, 255, 255, 1) !important;
-    transform: scale(1.1) !important;
+    box-shadow: 0 0 120px rgba(255, 255, 255, 1) !important;
+    transform: scale(1.05) !important;
 }
 
-/* WHATSAPP MONSTRUOSO */
 .whatsapp-float {
     position: fixed !important;
-    width: 110px !important;
-    height: 110px !important;
-    bottom: 60px !important;
-    right: 60px !important;
+    width: 120px !important;
+    height: 120px !important;
+    bottom: 50px !important;
+    right: 50px !important;
     background-color: #25d366 !important;
     border-radius: 50% !important;
-    box-shadow: 0 0 50px rgba(37, 211, 102, 1) !important;
+    box-shadow: 0 0 60px rgba(37, 211, 102, 1) !important;
     z-index: 10000 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    text-decoration: none !important;
-    animation: pulso-whats-brutal 1.5s infinite;
+    animation: pulso-pro 1.5s infinite;
 }
 
-@keyframes pulso-whats-brutal {
-    0%, 100% { transform: scale(1); box-shadow: 0 0 50px rgba(37, 211, 102, 1); }
-    50% { transform: scale(1.15); box-shadow: 0 0 80px rgba(37, 211, 102, 1); }
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.25) !important;
+@keyframes pulso-pro {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.12); }
 }
 
 .whatsapp-float img {
-    width: 65px !important;
-    height: 65px !important;
+    width: 70px !important;
+    height: 70px !important;
 }
 
 .whatsapp-text {
