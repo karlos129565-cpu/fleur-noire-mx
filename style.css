@@ -245,3 +245,89 @@ body {
         letter-spacing: 2px;
     }
 }
+body {
+    margin: 0;
+    padding: 0;
+    background: #000 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 100vh !important;
+    overflow-x: hidden;
+}
+body > * {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+body img:first-of-type,
+img[src*="fleur"], 
+img[src*="logo"] {
+    width: 600px !important;
+    max-width: 90vw !important;
+    height: auto !important;
+    margin: 0 auto 40px auto !important;
+    display: block !important;
+    filter: drop-shadow(0 0 40px #00f2ff) 
+            drop-shadow(0 0 80px #00f2ff) !important;
+}
+body p:first-of-type,
+p:contains("Elegancia"),
+p:contains("Sombras") {
+    font-size: 36px !important;
+    color: #fff !important;
+    letter-spacing: 5px !important;
+    margin: 40px auto !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    text-shadow: 0 0 20px #fff,
+                 0 0 40px #00f2ff,
+                 0 0 60px #00f2ff !important;
+    font-weight: 300 !important;
+    display: block !important;
+}
+a[href*="descubrir"],
+a[href*="marcas"],
+body > a {
+    padding: 25px 60px !important;
+    font-size: 24px !important;
+    color: #00f2ff !important;
+    border: 3px solid #00f2ff !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    letter-spacing: 3px !important;
+    background: transparent !important;
+    margin: 40px auto !important;
+    display: block !important;
+    width: fit-content !important;
+    box-shadow: 0 0 30px #00f2ff,
+                inset 0 0 30px rgba(0, 242, 255, 0.2) !important;
+    transition: all 0.3s ease !important;
+}
+
+a[href*="descubrir"]:hover,
+a[href*="marcas"]:hover {
+    background: #00f2ff !important;
+    color: #000 !important;
+    box-shadow: 0 0 50px #00f2ff,
+                0 0 100px #00f2ff !important;
+    transform: scale(1.1) !important;
+}
+a[href*="whatsapp"],
+a[href*="wa.me"],
+.whatsapp-btn {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 40px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #25D366 !important;
+    color: #fff !important;
+    box-shadow: 0 0 30px #25D366 !important;
+    z-index: 9999 !important;
+}
