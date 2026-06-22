@@ -79,7 +79,8 @@ body {
 .marcas-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 50px;
+    padding: 0 20px;
 }
 
 .marca-item {
@@ -89,6 +90,7 @@ body {
     border-radius: 15px;
     padding: 15px;
     transition: all 0.3s ease;
+    margin: 10px;
 }
 
 .marca-item:hover {
