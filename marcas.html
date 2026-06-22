@@ -63,6 +63,45 @@
             font-weight: bold;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
         }
+    
+  .header-marcas {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.header-marcas h1 {
+    color: #00ffff;
+    text-align: center;
+    margin: 0;
+}
+
+.btn-regresar {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.btn-regresar:hover {
+    border-color: #00ffff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.btn-regresar:hover svg path {
+    stroke: #00ffff;
+} 
     </style>
 </head>
     
@@ -73,7 +112,14 @@
             </nav>
         </div>
     </header>
+    <div class="header-marcas">
+    <a href="index.html" class="btn-regresar">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
     <h1>Nuestras Marcas</h1>
+</div>
     
   <div class="marcas-grid">
     <img src="./logo-adidas.webp" alt="Adidas" class="marca-logo">
