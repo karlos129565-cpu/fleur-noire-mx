@@ -4,136 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fleur Noire MX - Marcas</title>
-    <style>
-        body {
-            margin: 0;
-            background: radial-gradient(circle at center, #0a0a0a 0%, #000000 100%);
-            color: #FFF;
-            font-family: Georgia, serif;
-            min-height: 100vh;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
-            margin-bottom: 50px;
-        }
-
-      .marcas-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 100px;
-    max-width: 1400px; 
-    margin: 0 auto;
-    padding: 60px 20px;
-    align-items: center;
-}
-
-.marca-logo {
-    width: 100%;
-    height: 200px; 
-    object-fit: contain;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 15px;
-    opacity: 1; 
-    transition: all 0.3s ease;
-    border: 2px solid #333;
-    filter: none; 
-    box-shadow: 0 0 5px rgba(0, 255, 255, 0.2);
-}
-
-.marca-logo:hover {
-    opacity: 1;
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 25px #00ffff); 
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
-}
-         
-        .volver {
-            display: inline-block;
-            margin-top: 60px;
-            padding: 12px 30px;
-            background: #fff;
-            color: #000;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-        }
-    
-  .header-marcas {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-    padding-top: 20px; 
-      
-}
-
-.header-marcas h1 {
-    color: #00ffff;
-    text-align: center;
-    margin: 0;
-}
-
-.btn-regresar {
-    position: absolute;
-    left: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #000;
-    border: 2px solid #333;
-    border-radius: 12px;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.btn-regresar:hover {
-    border-color: #00ffff;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
-    transform: translateY(-50%) scale(1.1);
-}
-
-.btn-regresar:hover svg path {
-    stroke: #00ffff;
-} 
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-    
 <body>
-    
-            
-            
-            </nav>
+    <div class="container">
+        <div class="header-marcas">
+            <a href="index.html" class="btn-regresar">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </a>
+            <h1>Nuestras Marcas</h1>
         </div>
-    </header>
-  <div class="container">
-    <div class="header-marcas">
-        <a href="index.html" class="btn-regresar">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-        </a>
-        <h1>Nuestras Marcas</h1>
-    </div>
-
-    <div class="boton-historia-container">
-        <a href="historia-marcas.html" class="btn-historia">
-            Ver Historia de las Marcas →
-        </a>
-    </div>
-
-    <div class="marcas-grid">
-</div>
         
-<div class="marcas-grid">
+        <div class="boton-historia-container">
+            <a href="historia-marcas.html" class="btn-historia">
+                Ver Historia de las Marcas →
+            </a>
+        </div>
+
     
   <div class="marcas-grid">
     <img src="./logo-adidas.webp" alt="Adidas" class="marca-logo">
