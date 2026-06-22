@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
 }
 
-/* HEADER MARCAS - ARREGLADO */
+
 .header-marcas {
     position: relative;
     display: flex;
@@ -30,7 +30,7 @@ body {
 
 .btn-regresar {
     position: absolute;
-    left: 20px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
     background: #000;
@@ -49,7 +49,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
 }
 
-/* BOTÓN HISTORIA - CENTRADO Y BONITO */
+
 .boton-historia-container {
     text-align: center;
     margin: 0 0 50px 0;
@@ -75,7 +75,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* GRID DE MARCAS - ARREGLADO */
+
 .marcas-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -107,7 +107,6 @@ body {
     border: 2px solid #333;
 }
 
-/* HISTORIA DE MARCAS */
 .historia-card {
     display: flex;
     background: #0a0a0a;
