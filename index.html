@@ -5,61 +5,67 @@
   <meta charset="UFT-8">
   <link rel="icon" type="image/jpeg" href="favicon.jpeg">
   <style>
-  body { 
-    background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
-    color: #FFF;
-    font-family: Georgia, serif;
-    min-height: 100vh;
+  * {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+    body { 
+ background: #000 !important;
+margin: 0 !important;
+padding: 0 !important;
+width: 100% !important;
+overflow-x: hidden !important;
+font-family: 'Arial', sans-serif !important;
 }
     
     
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 20px;
-    text-align: center;
-    gap: 20px; /
+    width: 100vw !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 40px 20px !important;
+    box-sizing: border-box !important;
+
+ 
 }
 
 .hero img {
-    max-width: 600px !important;
-    width: 90% !important;
-    height: auto;
-    display: block;
+    max-width: 500px !important;
+    width: 80% !important;
+    height: auto !important;
     margin: 0 auto 40px auto !important;
     filter: drop-shadow(0 0 40px #00f2ff) 
             drop-shadow(0 0 80px #00f2ff) !important;
 }
 
-.hero h2, .hero p { 
-    font-size: 36px !important;
-    color: #fff !important;
-    letter-spacing: 5px !important;
-    text-transform: uppercase !important;
-    text-shadow: 0 0 20px #fff,
-                 0 0 40px #00f2ff !important;
-    margin: 40px 0 !important;
+.hero p {
+    color: #00d9ff !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 40px !important;
+    text-shadow: 0 0 20px #00f2ff !important;
 }
 
 .hero a {
-    padding: 25px 60px !important;
-    font-size: 24px !important;
-    color: #00f2ff !important;
-    border: 3px solid #00f2ff !important;
-    border-radius: 50px !important;
-    text-decoration: none !important;
-    text-transform: uppercase !important;
-    letter-spacing: 3px !important;
     display: inline-block !important;
-    margin-top: 40px !important;
-    box-shadow: 0 0 30px #00f2ff,
-                inset 0 0 30px rgba(0, 242, 255, 0.2) !important;
+    padding: 20px 60px !important;
+    background: transparent !important;
+    color: #00d9ff !important;
+    border: 3px solid #00d9ff !important;
+    border-radius: 50px !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 4px !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
     transition: all 0.3s ease !important;
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.5) !important;
 }
-
 .hero a:hover {
     background: #00f2ff !important;
     color: #000 !important;
