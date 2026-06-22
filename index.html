@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<htm lang="es">
 <head>
   <title>Fleur Noire MX</title>
   <meta charset="UFT-8">
@@ -24,26 +24,47 @@
     gap: 20px; /
 }
 
-.hero img { 
-   max-width: 320px;
-  width: 85%;
-  height: auto;
-  display: block;
-  margim; 0 auto;
+.hero img {
+    max-width: 600px !important;
+    width: 90% !important;
+    height: auto;
+    display: block;
+    margin: 0 auto 40px auto !important;
+    filter: drop-shadow(0 0 40px #00f2ff) 
+            drop-shadow(0 0 80px #00f2ff) !important;
 }
 
-.hero h2 { 
-    font-size: 2rem; 
-    font-weight: 700;
-    margin: 0;
-    color: #ffffff !important; 
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    animation: whiteFire 0.8s ease-in-out infinite !important;
-    text-shadow: 
-        0 0 10px #fff,
-        0 0 20px #fff,
-        0 0 30px #e0e0e0;
+.hero h2, .hero p { 
+    font-size: 36px !important;
+    color: #fff !important;
+    letter-spacing: 5px !important;
+    text-transform: uppercase !important;
+    text-shadow: 0 0 20px #fff,
+                 0 0 40px #00f2ff !important;
+    margin: 40px 0 !important;
+}
+
+.hero a {
+    padding: 25px 60px !important;
+    font-size: 24px !important;
+    color: #00f2ff !important;
+    border: 3px solid #00f2ff !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    letter-spacing: 3px !important;
+    display: inline-block !important;
+    margin-top: 40px !important;
+    box-shadow: 0 0 30px #00f2ff,
+                inset 0 0 30px rgba(0, 242, 255, 0.2) !important;
+    transition: all 0.3s ease !important;
+}
+
+.hero a:hover {
+    background: #00f2ff !important;
+    color: #000 !important;
+    box-shadow: 0 0 50px #00f2ff !important;
+    transform: scale(1.1) !important;
 }
 .btn-descubrir {
     display: inline-block;
@@ -60,7 +81,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 
-      0 0 15px rgba(0, 217, 255, 0.1);
+    0 0 15px rgba(0, 217, 255, 0.1);
 }
 
 .btn-descubrir {
