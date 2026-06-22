@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fleur Noire MX - Marcas</title>
-    <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style.css">
     <style>
-        /* FLAMEO PARA TODOS LOS LOGOS */
+      
+        .marcas-grid {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 35px !important;
+            max-width: 1200px !important;
+            margin: 40px auto !important;
+            padding: 0 40px !important;
+            justify-items: center !important;
+        }
+
         .marca-logo {
+            width: 280px !important;
+            height: 180px !important;
+            object-fit: contain !important;
+            background: #FFF !important;
+            padding: 20px !important;
+            border-radius: 12px !important;
             animation: flameo-marcas 1.8s ease-in-out infinite alternate !important;
-            border-radius: 8px !important;
             transition: all 0.3s ease !important;
         }
 
@@ -29,7 +44,6 @@
             }
         }
 
-        /* HOVER BRUTAL */
         .marca-logo:hover {
             animation: flameo-hover 0.6s ease-in-out infinite alternate !important;
             transform: scale(1.1) !important;
@@ -47,6 +61,29 @@
                 box-shadow: 0 0 80px #00f2ff,
                             0 0 160px #00f2ff,
                             0 0 240px #0099ff !important;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .marcas-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 25px !important;
+                padding: 0 20px !important;
+            }
+            .marca-logo {
+                width: 220px !important;
+                height: 150px !important;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .marcas-grid {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+            .marca-logo {
+                width: 280px !important;
+                height: 160px !important;
             }
         }
     </style>
